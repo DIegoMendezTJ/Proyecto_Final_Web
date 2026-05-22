@@ -1,1 +1,110 @@
-/*HI*/
+    /* ----------------------------------------
+    VARIABLES GLOBALES
+    ---------------------------------------- */
+    *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    :root {
+      /* Paleta de colores principal */
+    --verde-oscuro:   #1a4d2e;
+    --verde-medio:    #2d7a4f;
+    --verde-claro:    #4caf7d;
+    --verde-suave:    #c8ebd8;
+    --dorado:         #e8a020;
+    --dorado-claro:   #f5c842;
+    --terracota:      #c0522a;
+    --crema:          #fdf6e3;
+    --blanco:         #ffffff;
+    --gris-texto:     #2c2c2c;
+    --gris-suave:     #f4f1eb;
+    --sombra:         rgba(26, 77, 46, 0.15);
+
+      /* Tipografía */
+    --fuente-titulo: 'Georgia', 'Times New Roman', serif;
+    --fuente-cuerpo: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+
+    /* ----------------------------------------
+    ENCABEZADO Y NAVEGACIÓN
+    ---------------------------------------- */
+    header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--verde-oscuro);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+
+    /* Barra de navegación interior */
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 70px;
+    }
+
+    /* Logo del zoológico */
+    .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--blanco);
+    }
+
+    .logo-icono {
+    font-size: 32px;
+    }
+
+    .logo-texto {
+    font-family: var(--fuente-titulo);
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--dorado-claro);
+    }
+
+    .logo-subtexto {
+    font-size: 0.7rem;
+    color: var(--verde-suave);
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+
+    /* Lista de enlaces de navegación */
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    }
+
+    .nav-links li a {
+    color: var(--verde-suave);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: background 0.25s, color 0.25s;
+    letter-spacing: 0.5px;
+    }
+
+    /* Estado hover en los enlaces */
+    .nav-links li a:hover {
+    background-color: var(--verde-claro);
+    color: var(--blanco);
+    }
+
+    /* Enlace activo o resaltado */
+    .nav-links li a.activo {
+    background-color: var(--dorado);
+    color: var(--verde-oscuro);
+    font-weight: bold;
+    }
