@@ -124,16 +124,15 @@ GALERIA
 /*=============================================
 PROMOCIONES
 ============================================= */
-.promociones{
-  background-color: var(--verde-oscuro);
-  padding: 60px 20px;
-  position: relative;
-  overflow: hidden;
+    #promociones {
+      background-color: var(--verde-oscuro);
+      position: relative;
+      overflow: hidden;
+      padding: 3%;
+    }
 
-  }
-
-      /* Patrón decorativo de fondo en promociones */
-.promociones::before {
+    /* Patrón decorativo de fondo en promociones */
+    #promociones::before {
       content: '';
       position: absolute;
       top: -80px;
@@ -145,14 +144,178 @@ PROMOCIONES
       pointer-events: none;
     }
 
-.promociones-lista{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-evenly;
-}
+    #promociones .seccion-titulo {
+      color: var(--dorado-claro);
+      text-align: center;
+      border: solid var(--dorado) 2px;
+      padding: 3%;
+      box-shadow: black 10px 10px 10px;
+      text-shadow: black 4px 4px 8px;
+    }
 
+    #promociones .seccion-descripcion {
+      color: var(--verde-suave);
+      text-align: center;
+      padding: 2%;
+    }
 
+    /* Grid de tarjetas de promoción */
+    .promos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 3%;
+    }
+
+    /* Tarjeta de promoción */
+    .promo-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(76,175,125,0.25);
+      border-radius: var(--radio-grande);
+      padding: 32px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .promo-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-4px);
+    }
+
+    /* Tarjeta destacada / popular */
+    .promo-card.destacada {
+      border-color: var(--dorado);
+      background: rgba(232,160,32,0.1);
+    }
+
+    /* Badge "Más popular" */
+    .promo-popular-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--dorado);
+      color: var(--verde-oscuro);
+      font-size: 0.72rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 6px 16px;
+      border-radius: 0 var(--radio-grande) 0 var(--radio);
+    }
+
+    .promo-icono {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .promo-titulo {
+      font-family: var(--fuente-titulo);
+      font-size: 1.4rem;
+      color: var(--blanco);
+      margin-bottom: 10px;
+    }
+
+    .promo-descripcion {
+      font-size: 0.9rem;
+      color: var(--verde-suave);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    /* Precio de la promoción */
+    .promo-precio {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .precio-tachado {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.4);
+      text-decoration: line-through;
+    }
+
+    .precio-actual {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--dorado-claro);
+    }
+
+    .precio-nota {
+      font-size: 0.8rem;
+      color: var(--verde-suave);
+      margin-bottom: 24px;
+    }
+
+    /* Lista de beneficios de la promoción */
+    .promo-beneficios {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .promo-beneficios li {
+      font-size: 0.88rem;
+      color: var(--verde-suave);
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .promo-beneficios li::before {
+      content: '✓';
+      color: var(--verde-claro);
+      font-weight: bold;
+    }
+
+    /* Botón de la tarjeta de promoción */
+    .promo-boton {
+      display: block;
+      text-align: center;
+      background-color: var(--verde-claro);
+      color: var(--blanco);
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .promo-boton:hover {
+      background-color: var(--verde-medio);
+    }
+
+    .promo-card.destacada .promo-boton {
+      background-color: var(--dorado);
+      color: var(--verde-oscuro);
+    }
+
+    .promo-card.destacada .promo-boton:hover {
+      background-color: var(--dorado-claro);
+    }
+
+    /* Cupón de descuento */
+    .cupon {
+      border: 2px dashed rgba(255,255,255,0.2);
+      border-radius: var(--radio);
+      padding: 10px 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .cupon-codigo {
+      font-family: 'Courier New', monospace;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--dorado-claro);
+      letter-spacing: 3px;
+    }
+
+    .cupon-etiqueta {
+      font-size: 0.75rem;
+      color: var(--verde-suave);
+    }
 
 
 /*=============================================
