@@ -126,11 +126,18 @@ GALERIA
 
     #galeria .seccion-titulo {
       color: var(--verde-claro);
-      text-align: center;
       border: solid var(--verde-oscuro) 2px;
       padding: 3%;
       box-shadow: rgb(0, 0, 0) 5px 5px 10px;
       text-shadow: rgb(0, 0, 0) 2px 2px 8px;
+
+      display: flex;    
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 200px;
+      height: 40px;
+      margin-left: 45%;
     }
 
     #galeria .seccion-descripcion{
@@ -138,6 +145,25 @@ GALERIA
       text-align: center;
       padding: 5%;
     }
+
+     /* Grid de la galería */
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 16px;
+    }
+
+        /* Celda de foto en la galería */
+    .galeria-item {
+      border-radius: var(--radio);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 2px 10px var(--sombra);
+      transition: transform 0.3s;
+    }
+
 
 
 /*=============================================
