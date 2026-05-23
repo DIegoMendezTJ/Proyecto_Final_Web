@@ -92,7 +92,6 @@
     font-size: 0.95rem;
     padding: 8px 16px;
     border-radius: 30px;
-    transition: background 0.25s, color 0.25s;
     letter-spacing: 0.5px;
     }
 
@@ -120,6 +119,26 @@ ANIMALES
 /*=============================================
 GALERIA
 ============================================= */
+    #galeria {
+      background-color: var(--crema);
+      padding: 3%;
+    }
+
+    #galeria .seccion-titulo {
+      color: var(--verde-claro);
+      text-align: center;
+      border: solid var(--verde-oscuro) 2px;
+      padding: 3%;
+      box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+      text-shadow: rgb(0, 0, 0) 2px 2px 8px;
+    }
+
+    #galeria .seccion-descripcion{
+      color: var(--verde-oscuro);
+      text-align: center;
+      padding: 5%;
+    }
+
 
 /*=============================================
 PROMOCIONES
