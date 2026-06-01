@@ -236,7 +236,21 @@ padding: 5rem 8%;
 .mamiferos h3{
     border-color:#d97706;
 }
+.animal-encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+}
 
+.animal-encabezado h4{
+    margin: 0;
+}
+
+.animal-encabezado audio{
+    width: 120px;
+}
 .aves h3{
     border-color:#2563eb;
 }
