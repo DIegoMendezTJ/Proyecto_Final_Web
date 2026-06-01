@@ -135,7 +135,7 @@ INICO
         rgba(26, 77, 46, 0.9),
         rgba(45, 122, 79, 0.85)
     );
-    padding: 80px 5%;
+    padding: 50px 5%;
     color: var(--blanco);
 }
 
@@ -213,8 +213,13 @@ INICO
 ANIMALES
 ============================================= */
 #animales{
-    padding: 5rem 8%;
-    background: #f8faf8;
+padding: 5rem 8%;
+    background: linear-gradient(
+        to bottom,
+        var(--verde-suave) 0%,
+        var(--blanco) 20%,
+        var(--blanco) 100%
+    );
 }
 
 .categoria-animal{
@@ -228,47 +233,61 @@ ANIMALES
     border-left: 6px solid #4caf50;
     padding-left: 1rem;
 }
+.mamiferos h3{
+    border-color:#d97706;
+}
 
+.aves h3{
+    border-color:#2563eb;
+}
+
+.reptiles h3{
+    border-color:#16a34a;
+}
+
+.acuaticos h3{
+    border-color:#0891b2;
+}
 .animales-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-.animal-card{
-    background: white;
+.animal-tarjeta{
+    background: var(--blanco);
+    border: 1px solid rgba(26,77,46,.08);
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,.1);
-    transition: transform .3s ease,
-                box-shadow .3s ease;
+    box-shadow: 0 4px 15px rgba(26,77,46,.08);
+    transition: .35s ease;
 }
 
-.animal-card:hover{
+.animal-tarjeta:hover{
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
-.animal-card img{
+.animal-tarjeta img{
     width: 100%;
     height: 230px;
     object-fit: cover;
     display: block;
 }
 
-.animal-card h4{
+.animal-tarjeta h4{
     font-size: 1.4rem;
     color: #2d5a27;
     margin: 1rem;
 }
 
-.animal-card p{
+.animal-tarjeta p{
     margin: .8rem 1rem;
     line-height: 1.6;
     color: #555;
 }
 
-.animal-card strong{
+.animal-tarjeta strong{
     color: #1b4332;
 }
 
@@ -280,8 +299,9 @@ ANIMALES
 GALERIA
 ============================================= */
     #galeria {
-      background-color: var(--crema);
-      padding: 3%;
+       background: linear-gradient(to bottom, var(--crema), var(--gris-suave)
+    );
+    padding: 5rem 8%
     }
 
     #galeria .seccion-titulo {
@@ -310,11 +330,15 @@ GALERIA
 PROMOCIONES
 ============================================= */
     #promociones {
-      background-color: var(--verde-oscuro);
-      position: relative;
-      overflow: hidden;
-      padding: 3%;
-    }
+     background: linear-gradient(
+        135deg,
+        var(--verde-medio),
+        var(--verde-oscuro)
+    );
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 8%;
+}
 
     /* Patrón decorativo de fondo en promociones */
     #promociones::before {
