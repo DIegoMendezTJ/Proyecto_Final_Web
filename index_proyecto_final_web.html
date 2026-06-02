@@ -234,65 +234,349 @@
   </div>
 </section>
   <!-- =============================================
-  GALERIA
-  ============================================= -->
+  GALERIA 
+============================================= -->
 
-  <section id="galeria" aria-label="Galeria">
-    <div class="contenedor">
-    <!-- Encabezado galeria-->
+<section id="galeria" aria-label="Galería fotográfica de ZooVida">
+  <div class="contenedor">
+
+    <!-- Encabezado de la galería -->
     <div class="seccion-encabezado">
-      <h2 class="seccion-titulo">Galería </h2>
+      <h2 class="seccion-titulo">Galería</h2>
       <div class="linea-decorativa"></div>
-      <p class="seccion-descripcion">Una pequeña ventana a la magia de nuestro zoologico: Animales, instalaciones, actividades educativas
+      <p class="seccion-descripcion">
+        Una pequeña ventana a la magia de nuestro zoológico: animales, instalaciones, actividades educativas
         y eventos especiales que hacen de cada visita una experiencia inolvidable.
       </p>
-  </div>
-
-  <!--Carrusel-->
+        <hr>
+    </div>
   
-  <section class="contenedor-carrusel">
-    <article class="carrusel">
-      <article class=" tarjeta-carrusel">
-        <img src="imagenes_animales/tigre_bengala_tropical.jpeg" alt="Tigre de bengala ">
-        <h3 class="carrusel-titulo">Tigre de bengala</h3>
-        <p class="carrusel-descripcion">El tigre de bengala es uno de los grandes felinos más impresionantes. Vive en selvas y se caracteriza por su pelaje anaranjado con rayas negras.</p>
-      </article>
-        <article class=" tarjeta-carrusel">
-        <img src="imagenes_animales/Elefante_comiendo.jpeg" alt="Elefante comiendo ">
-        <h3 class="carrusel-titulo">Elefante</h3>
-        <p class="carrusel-descripcion">El elefante es uno de los animales más inteligentes y sociales del zoológico. Vive en manadas y se caracteriza por su gran tamaño y memoria excepcional.</p>
-      </article>
-        <article class=" tarjeta-carrusel">
-        <img src="imagenes_animales/jirafa.jpeg" alt="Jirafa ">
-        <h3 class="carrusel-titulo">Jirafa</h3>
-        <p class="carrusel-descripcion">La jirafa es el animal terrestre más alto del mundo. Vive en sabanas y se caracteriza por su cuello largo y patas largas.</p>
-      </article>
-        <article class=" tarjeta-carrusel">
-        <img src="imagenes_animales/leon.jpeg" alt="León ">
-        <h3 class="carrusel-titulo">León</h3>
-        <p class="carrusel-descripcion">El león es el rey de la selva y uno de los grandes felinos más reconocibles. Vive en sabanas y se caracteriza por su melena imponente.</p>
-      </article>
-        <article class=" tarjeta-carrusel">
-        <img src="imagenes_animales/panda.webp" alt="Panda ">
-        <h3 class="carrusel-titulo">Panda</h3>
-        <p class="carrusel-descripcion">El panda es un oso que vive en bosques de bambú. Se caracteriza por su pelaje blanco y negro y su comportamiento tranquilo.</p>
-      </article>
-        <article class=" tarjeta-carrusel">
-        <img src="imagenes_animales/tigre_bengala_tropical.jpeg" alt="Tigre de bengala ">
-        <h3 class="carrusel-titulo">Tigre de bengala</h3>
-        <p class="carrusel-descripcion">El tigre de bengala es uno de los grandes felinos más impresionantes. Vive en selvas y se caracteriza por su pelaje anaranjado con rayas negras.</p>
-      </article>
-      
 
-    </article>
-
-  </section>
-    <!-- Grid fotográfico -->
-      <div class="galeria-grid">
-
+    <!-- ===== CARRUSEL TROPICAL ===== -->
+    <div class="galeria-categoria">
+      <div class="galeria-cat-encabezado">
+        <span class="galeria-cat-icono">🌴</span>
+        <h3 class="galeria-cat-titulo">Zona Tropical</h3>
+      </div>
+      <div class="carrusel-wrapper">
+        <button class="carrusel-btn carrusel-btn--prev" aria-label="Anterior">&#8249;</button>
+        <div class="carrusel-pista" id="carrusel-tropical">
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1615963244664-5b845b2025ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tigre de Bengala">
+            <div class="tarjeta-carrusel-info">
+              <h4>Tigre de Bengala</h4>
+              <p>El gran felino de la selva tropical, con su pelaje naranja y rayas negras únicas.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1708310945058-d01a27bff936?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Guacamaya">
+            <div class="tarjeta-carrusel-info">
+              <h4> Guacamaya Escarlata</h4>
+              <p>Ave de colores espectaculares originaria de las selvas de América Central y del Sur.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1623687853501-cab31a66b051?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rana venenosa">
+            <div class="tarjeta-carrusel-info">
+              <h4>Rana Venenosa</h4>
+              <p>Su colores brillantes advierten a los depredadores: ¡soy peligrosa! Habita selvas húmedas.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1566544496485-02b11e54229b?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jaguar">
+            <div class="tarjeta-carrusel-info">
+              <h4> Jaguar</h4>
+              <p>El felino más grande de América, símbolo de fuerza y misterio en la selva.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=1200&q=90" alt="Mono araña">
+            <div class="tarjeta-carrusel-info">
+              <h4> Mono Araña</h4>
+              <p>Ágil habitante de los doselares tropicales, se desplaza entre ramas con gran destreza.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carrusel-btn carrusel-btn--next" aria-label="Siguiente">&#8250;</button>
+      </div>
+      <div class="carrusel-puntos" id="puntos-tropical"></div>
     </div>
 
-  </section>
+    <!-- ===== CARRUSEL SABANA ===== -->
+    <div class="galeria-categoria">
+      <div class="galeria-cat-encabezado">
+        <span class="galeria-cat-icono">🌾</span>
+        <h3 class="galeria-cat-titulo">Zona Sabana</h3>
+      </div>
+      <div class="carrusel-wrapper">
+        <button class="carrusel-btn carrusel-btn--prev" aria-label="Anterior">&#8249;</button>
+        <div class="carrusel-pista" id="carrusel-sabana">
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1200&q=90" alt="León africano">
+            <div class="tarjeta-carrusel-info">
+              <h4> León Africano</h4>
+              <p>El rey de las sabanas, conocido por su imponente melena y su poderoso rugido.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jirafa">
+            <div class="tarjeta-carrusel-info">
+              <h4> Jirafa</h4>
+              <p>El animal terrestre más alto del mundo; su cuello le permite alcanzar hojas en lo alto de los árboles.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1581852017103-68ac65514cf7?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elefante africano">
+            <div class="tarjeta-carrusel-info">
+              <h4>Elefante Africano</h4>
+              <p>El mamífero terrestre más grande; de gran inteligencia y fuerte vínculo social.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?q=80&w=915&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Guepardo">
+            <div class="tarjeta-carrusel-info">
+              <h4> Guepardo</h4>
+              <p>El animal terrestre más veloz del mundo, alcanza hasta 120 km/h en pocos segundos.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1526095179574-86e545346ae6?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cebra">
+            <div class="tarjeta-carrusel-info">
+              <h4> Cebra</h4>
+              <p>Sus rayas únicas las distinguen en las manadas y confunden a los depredadores.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carrusel-btn carrusel-btn--next" aria-label="Siguiente">&#8250;</button>
+      </div>
+      <div class="carrusel-puntos" id="puntos-sabana"></div>
+    </div>
+
+    <!-- ===== CARRUSEL ACUÁTICO ===== -->
+    <div class="galeria-categoria">
+      <div class="galeria-cat-encabezado">
+        <span class="galeria-cat-icono">🌊</span>
+        <h3 class="galeria-cat-titulo">Zona Acuática</h3>
+      </div>
+      <div class="carrusel-wrapper">
+        <button class="carrusel-btn carrusel-btn--prev" aria-label="Anterior">&#8249;</button>
+        <div class="carrusel-pista" id="carrusel-acuatico">
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?w=1200&q=80" alt="Delfín">
+            <div class="tarjeta-carrusel-info">
+              <h4>  Delfín</h4>
+              <p>Mamífero marino altamente inteligente, conocido por su carácter juguetón y comunicación avanzada.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://plus.unsplash.com/premium_photo-1661816797370-928a8749043c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pingüino">
+            <div class="tarjeta-carrusel-info">
+              <h4> Pingüino</h4>
+              <p>Ave marina que no puede volar, pero nada con una elegancia y velocidad sorprendentes.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tortuga marina">
+            <div class="tarjeta-carrusel-info">
+              <h4> Tortuga Marina</h4>
+              <p>Viajeras del océano que pueden recorrer miles de kilómetros a lo largo de su vida.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1580580297368-c782fb65d271?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tiburón">
+            <div class="tarjeta-carrusel-info">
+              <h4> Tiburón Ballena</h4>
+              <p>El pez más grande del mundo, pacífico filtrador que recorre los océanos tropicales.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1558586545-5634bea8ef84?q=80&w=759&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mantarraya">
+            <div class="tarjeta-carrusel-info">
+              <h4>Mantarraya</h4>
+              <p>Elegante habitante del océano que parece volar bajo el agua con sus aletas extendidas.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carrusel-btn carrusel-btn--next" aria-label="Siguiente">&#8250;</button>
+      </div>
+      <div class="carrusel-puntos" id="puntos-acuatico"></div>
+    </div>
+
+    <!-- ===== CARRUSEL POLAR ===== -->
+    <div class="galeria-categoria">
+      <div class="galeria-cat-encabezado">
+        <span class="galeria-cat-icono">❄️</span>
+        <h3 class="galeria-cat-titulo">Zona Polar</h3>
+      </div>
+      <div class="carrusel-wrapper">
+        <button class="carrusel-btn carrusel-btn--prev" aria-label="Anterior">&#8249;</button>
+        <div class="carrusel-pista" id="carrusel-polar">
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?q=90&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oso polar">
+            <div class="tarjeta-carrusel-info">
+              <h4> Oso Polar</h4>
+              <p>El mayor carnívoro terrestre del ártico; su pelaje blanco lo camufla en el hielo y nieve.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1690941398250-849e215b6755?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morsa">
+            <div class="tarjeta-carrusel-info">
+              <h4> Morsa</h4>
+              <p>Reconocible por sus largos colmillos; se reúne en colonias sobre bancos de hielo árticos.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1493579706121-60161eb06eeb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foca">
+            <div class="tarjeta-carrusel-info">
+              <h4> Foca Leopardo</h4>
+              <p>Ágil depredador de los mares del sur, conocido por su velocidad y su manchado caracteristico.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://plus.unsplash.com/premium_photo-1664304409780-6d31241e9058?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Búho nival">
+            <div class="tarjeta-carrusel-info">
+              <h4> Búho Nival</h4>
+              <p>Ave rapaz de los territorios árticos, caza tanto de día como de noche en la tundra.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1568162603664-fcd658421851?q=80&w=1081&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oso pardo">
+            <div class="tarjeta-carrusel-info">
+              <h4> Oso Pardo</h4>
+              <p>Omnívoro poderoso de las regiones frías del norte; hiberna durante los meses de invierno.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carrusel-btn carrusel-btn--next" aria-label="Siguiente">&#8250;</button>
+      </div>
+      <div class="carrusel-puntos" id="puntos-polar"></div>
+    </div>
+
+    <!-- ===== CARRUSEL DESIERTO ===== -->
+    <div class="galeria-categoria">
+      <div class="galeria-cat-encabezado">
+        <span class="galeria-cat-icono">🏜️</span>
+        <h3 class="galeria-cat-titulo">Zona Desierto</h3>
+      </div>
+      <div class="carrusel-wrapper">
+        <button class="carrusel-btn carrusel-btn--prev" aria-label="Anterior">&#8249;</button>
+        <div class="carrusel-pista" id="carrusel-desierto">
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1700299926955-d68c16ba107b?q=90&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Camello">
+            <div class="tarjeta-carrusel-info">
+              <h4> Camello</h4>
+              <p>El "barco del desierto"; sus jorobas almacenan grasa que le permite sobrevivir semanas sin agua.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fennec">
+            <div class="tarjeta-carrusel-info">
+              <h4>Zorro Fennec</h4>
+              <p>Sus enormes orejas disipan el calor; el zorro más pequeño del mundo habita el Sahara.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1605051538177-72c289389de5?q=80&w=1102&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Serpiente de cascabel">
+            <div class="tarjeta-carrusel-info">
+              <h4> Serpiente de Cascabel</h4>
+              <p>Vibra su cola como advertencia; una de las serpientes más características del desierto americano.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1700488217112-5a174f599624?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Escorpión">
+            <div class="tarjeta-carrusel-info">
+              <h4> Escorpión</h4>
+              <p>Arácnido resistente que sobrevive en condiciones extremas de calor y escasez de agua.</p>
+            </div>
+          </div>
+          <div class="tarjeta-carrusel">
+            <img src="https://images.unsplash.com/photo-1570117211518-ff59a68d7f5b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coyote">
+            <div class="tarjeta-carrusel-info">
+              <h4> Coyote</h4>
+              <p>Adaptable y astuto, el coyote prospera tanto en desiertos áridos como en zonas suburbanas.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carrusel-btn carrusel-btn--next" aria-label="Siguiente">&#8250;</button>
+      </div>
+      <div class="carrusel-puntos" id="puntos-desierto"></div>
+    </div>
+
+  </div><!-- /contenedor -->
+</section>
+
+
+<!-- =============================================
+  SCRIPT DEL CARRUSEL Ayuda con claude jaja
+============================================= -->
+<script>
+  (function () {
+    // Configuración de cada carrusel
+    const carruseles = [
+      { pistaId: 'carrusel-tropical',  puntosId: 'puntos-tropical'  },
+      { pistaId: 'carrusel-sabana',    puntosId: 'puntos-sabana'    },
+      { pistaId: 'carrusel-acuatico',  puntosId: 'puntos-acuatico'  },
+      { pistaId: 'carrusel-polar',     puntosId: 'puntos-polar'     },
+      { pistaId: 'carrusel-desierto',  puntosId: 'puntos-desierto'  },
+    ];
+
+    carruseles.forEach(({ pistaId, puntosId }) => {
+      const pista    = document.getElementById(pistaId);
+      const puntosEl = document.getElementById(puntosId);
+      if (!pista || !puntosEl) return;
+
+      const wrapper  = pista.closest('.carrusel-wrapper');
+      const btnPrev  = wrapper.querySelector('.carrusel-btn--prev');
+      const btnNext  = wrapper.querySelector('.carrusel-btn--next');
+      const tarjetas = Array.from(pista.querySelectorAll('.tarjeta-carrusel'));
+      const total    = tarjetas.length;
+      let   actual   = 0;
+      let   autoTimer;
+
+      // Crear puntos de navegación
+      tarjetas.forEach((_, i) => {
+        const punto = document.createElement('button');
+        punto.className = 'carrusel-punto' + (i === 0 ? ' activo' : '');
+        punto.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
+        punto.addEventListener('click', () => irA(i));
+        puntosEl.appendChild(punto);
+      });
+
+      function irA(indice) {
+        actual = (indice + total) % total;
+        pista.style.transform = `translateX(-${actual * 100}%)`;
+        puntosEl.querySelectorAll('.carrusel-punto').forEach((p, i) => {
+          p.classList.toggle('activo', i === actual);
+        });
+      }
+
+      function siguiente() { irA(actual + 1); }
+      function anterior()  { irA(actual - 1); }
+
+      btnNext.addEventListener('click', () => { siguiente(); reiniciarAuto(); });
+      btnPrev.addEventListener('click', () => { anterior();  reiniciarAuto(); });
+
+      // Auto-avance cada 4 s
+      function iniciarAuto()   { autoTimer = setInterval(siguiente, 4000); }
+      function reiniciarAuto() { clearInterval(autoTimer); iniciarAuto(); }
+
+      // Parar al hacer hover
+      wrapper.addEventListener('mouseenter', () => clearInterval(autoTimer));
+      wrapper.addEventListener('mouseleave', iniciarAuto);
+
+      // Swipe táctil
+      let startX = 0;
+      pista.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+      pista.addEventListener('touchend',   e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) { diff > 0 ? siguiente() : anterior(); reiniciarAuto(); }
+      });
+
+      iniciarAuto();
+    });
+  })();
+</script>
+
 
   <!-- =============================================
   PROMOCIONES

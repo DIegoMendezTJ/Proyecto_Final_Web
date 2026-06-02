@@ -310,41 +310,212 @@ padding: 5rem 8%;
     border-top: 2px solid #e5e7eb;
 }
 /*=============================================
-GALERIA
+  GALERÍA 
 ============================================= */
-    #galeria {
-       background: linear-gradient(to bottom, var(--crema), var(--gris-suave)
-    );
-    padding: 5rem 8%
-    }
 
-    #galeria .seccion-titulo {
-      color: var(--verde-claro);
-      border: solid var(--verde-oscuro) 2px;
-      padding: 3%;
-      box-shadow: rgb(0, 0, 0) 5px 5px 10px;
-      text-shadow: rgb(0, 0, 0) 2px 2px 8px;
+/* ── Sección principal ─────────────────────── */
+#galeria {
+  background: linear-gradient(to bottom, var(--crema), var(--gris-suave));
+  padding: 5rem 8%;
+}
 
-      display: flex;    
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      width: 200px;
-      height: 40px;
-      margin: 0 auto;
-    }
+/* Título redondo de la sección galería */
+#galeria .seccion-titulo {
+  color: var(--verde-claro);
+  border: solid var(--verde-oscuro) 2px;
+  padding: 3%;
+  box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+  text-shadow: rgb(0, 0, 0) 2px 2px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 300px;
+  height: 200px;          
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
 
-    #galeria .seccion-descripcion{
-      color: var(--verde-oscuro);
-      text-align: center;
-      padding: 5%;
-    }
+
+
+#galeria .seccion-descripcion {
+  color: var(--verde-oscuro);
+  text-align: center;
+  padding: 2rem 5% 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ── Bloque de categoría ───────────────────── */
+.galeria-categoria {
+  margin-top: 4rem;
+}
+
+/* Encabezado de cada categoría */
+.galeria-cat-encabezado {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.galeria-cat-icono {
+  font-size: 2rem;
+}
+
+.galeria-cat-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: 1.6rem;
+  color: var(--verde-oscuro);
+  border-left: 6px solid var(--verde-claro);
+  padding-left: 0.8rem;
+  margin: 0;
+}
+
+/* ── Wrapper del carrusel (posiciona los botones) */
+.carrusel-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px var(--sombra);
+}
+
+/* ── Pista deslizante ──────────────────────── */
+.carrusel-pista {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  /* cada tarjeta ocupa el 100% del wrapper */
+}
+
+/* ── Tarjeta individual ────────────────────── */
+.tarjeta-carrusel {
+  min-width: 100%;          /* una tarjeta visible a la vez */
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tarjeta-carrusel img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* Capa de información sobre la imagen */
+.tarjeta-carrusel-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 77, 46, 0.92) 0%,
+    rgba(26, 77, 46, 0.5)  60%,
+    transparent            100%
+  );
+  color: var(--blanco);
+  padding: 2rem 2rem 1.6rem;
+  transform: translateY(0);
+  transition: padding 0.3s ease;
+}
+
+.tarjeta-carrusel:hover .tarjeta-carrusel-info {
+  padding-bottom: 2rem;
+}
+
+.tarjeta-carrusel-info h4 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  color: var(--dorado-claro);
+  margin-bottom: 0.4rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.tarjeta-carrusel-info p {
+  font-size: 0.92rem;
+  color: var(--crema);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Botones prev / next ───────────────────── */
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  background: rgba(26, 77, 46, 0.75);
+  color: var(--dorado-claro);
+  border: 2px solid var(--dorado);
+  border-radius: 50%;
+
+  width: 46px;
+  height: 46px;
+  font-size: 1.8rem;
+  line-height: 1;
+
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-btn:hover {
+  background: var(--verde-medio);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carrusel-btn--prev { left: 12px; }
+.carrusel-btn--next { right: 12px; }
+
+/* ── Puntos de navegación*/
+.carrusel-puntos {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.carrusel-punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(26, 77, 46, 0.25);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carrusel-punto.activo {
+  background: var(--verde-medio);
+  transform: scale(1.35);
+}
+
+.carrusel-punto:hover {
+  background: var(--verde-claro);
+}
+
+/* ── Color de borde por categoría ──────────── */
+.galeria-categoria:nth-child(2) .galeria-cat-titulo { border-color: #f59e0b; } /* tropical  */
+.galeria-categoria:nth-child(3) .galeria-cat-titulo { border-color: #d97706; } /* sabana    */
+.galeria-categoria:nth-child(4) .galeria-cat-titulo { border-color: #0891b2; } /* acuático  */
+.galeria-categoria:nth-child(5) .galeria-cat-titulo { border-color: #6366f1; } /* polar     */
+.galeria-categoria:nth-child(6) .galeria-cat-titulo { border-color: #ef4444; } /* desierto  */
+
+/* ── Separador entre categorías ───────────── */
+.galeria-categoria + .galeria-categoria {
+  padding-top: 1rem;
+  border-top: 2px solid rgba(26, 77, 46, 0.1);
+}
 
 /*=============================================
 PROMOCIONES
 ============================================= */
     #promociones {
-     background: linear-gradient(
+    background: linear-gradient(
         135deg,
         var(--verde-medio),
         var(--verde-oscuro)
