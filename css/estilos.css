@@ -132,11 +132,11 @@ INICO
 ============================================= */
 #inicio{
     background: linear-gradient(
-        rgba(26, 77, 46, 0.9),
-        rgba(45, 122, 79, 0.85)
+        180deg,
+        var(--verde-claro) 0%,
+        #d8f3dc 100%
     );
     padding: 50px 5%;
-    color: var(--blanco);
 }
 
 .inicio-contenedor{
@@ -165,7 +165,7 @@ INICO
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 15px;
-    color: var(--crema);
+    color: var(--verde-oscuro);
 }
 
 .inicio-boton{
@@ -214,12 +214,7 @@ ANIMALES
 ============================================= */
 #animales{
 padding: 5rem 8%;
-    background: linear-gradient(
-        to bottom,
-        var(--verde-suave) 0%,
-        var(--blanco) 20%,
-        var(--blanco) 100%
-    );
+     background: #f8fdf8;
 }
 
 .categoria-animal{
@@ -315,35 +310,43 @@ padding: 5rem 8%;
 
 /* ── Sección principal ─────────────────────── */
 #galeria {
-  background: linear-gradient(to bottom, var(--crema), var(--gris-suave));
-  padding: 5rem 8%;
+ background: linear-gradient(
+        to bottom,
+        #eef8f0,
+        #f8faf8
+    );
+    padding: 5rem 8%;
 }
 
-/* Título redondo de la sección galería */
-#galeria .seccion-titulo {
-  color: var(--verde-claro);
-  border: solid var(--verde-oscuro) 2px;
-  padding: 3%;
-  box-shadow: rgb(0, 0, 0) 5px 5px 10px;
-  text-shadow: rgb(0, 0, 0) 2px 2px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 300px;
-  height: 200px;          
-  margin: 0 auto;
-  font-size: 2.5rem;
+#galeria .seccion-titulo{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--verde-oscuro);
+    margin-bottom: .5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.15);
 }
 
+#galeria .seccion-titulo::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(
+        to right,
+        var(--verde-claro),
+        var(--verde-medio)
+    );
+    margin: 1rem auto 0;
+    border-radius: 20px;
+}
 
-
-#galeria .seccion-descripcion {
-  color: var(--verde-oscuro);
-  text-align: center;
-  padding: 2rem 5% 0;
-  max-width: 700px;
-  margin: 0 auto;
+#galeria .seccion-descripcion{
+    color: var(--verde-oscuro);
+    text-align: center;
+    max-width: 850px;
+    margin: 1.5rem auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 /* ── Bloque de categoría ───────────────────── */
@@ -372,7 +375,7 @@ padding: 5rem 8%;
   margin: 0;
 }
 
-/* ── Wrapper del carrusel (posiciona los botones) */
+/* Carrusel*/
 .carrusel-wrapper {
   position: relative;
   overflow: hidden;
@@ -384,7 +387,6 @@ padding: 5rem 8%;
 .carrusel-pista {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  /* cada tarjeta ocupa el 100% del wrapper */
 }
 
 /* ── Tarjeta individual ────────────────────── */
@@ -394,13 +396,16 @@ padding: 5rem 8%;
   flex-shrink: 0;
 }
 
-.tarjeta-carrusel img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: center 30%;
+.tarjeta-carrusel img{
+    width:100%;
+    height: clamp(350px, 50vw, 600px);
+    object-fit: cover;
+    object-position: center;
 }
 
+.galeria-categoria{
+    margin-top:3rem;
+}
 /* Capa de información sobre la imagen */
 .tarjeta-carrusel-info {
   position: absolute;
@@ -510,7 +515,52 @@ padding: 5rem 8%;
   padding-top: 1rem;
   border-top: 2px solid rgba(26, 77, 46, 0.1);
 }
+.galeria-extra{
+    margin-top: 5rem;
+}
 
+.instalaciones-grid,
+.actividades-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.instalacion-card,
+.actividad-card{
+    background: var(--blanco);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,.12);
+    transition: .3s ease;
+}
+
+.instalacion-card:hover,
+.actividad-card:hover{
+    transform: translateY(-8px);
+}
+
+.instalacion-card img,
+.actividad-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.instalacion-card h4,
+.actividad-card h4{
+    padding: 1rem;
+    color: var(--verde-oscuro);
+    text-align: center;
+}
+
+.actividad-card p{
+    padding: 0 1rem 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #444;
+}
 /*=============================================
 PROMOCIONES
 ============================================= */
