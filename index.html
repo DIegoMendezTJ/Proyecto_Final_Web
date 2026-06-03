@@ -751,6 +751,73 @@
         </div>
 
       </div><!-- /promos-grid -->
+
+      <!-- =============================================
+      FORMULARIO DE COMPRA 
+      ============================================= -->
+      <div class="forma-contenedor">
+        <div class="forma-encabezado">
+          <span class="forma-icono">🎟️</span>
+          <h3 class="forma-titulo">Compra tu entrada</h3>
+          <p class="forma-subtitulo">Rellena tus datos y nos pondremos en contacto contigo para confirmar tu visita.</p>
+        </div>
+
+        <div class="forma-grid">
+          <!-- Nombre -->
+          <div class="forma-campo">
+            <label for="f-nombre">Nombre completo</label>
+            <input type="text" id="f-nombre" name="nombre" placeholder="Ej. Ana García López" required>
+          </div>
+
+          <!-- Correo -->
+          <div class="forma-campo">
+            <label for="f-correo">Correo electrónico</label>
+            <input type="email" id="f-correo" name="correo" placeholder="correo@ejemplo.com" required>
+          </div>
+
+          <!-- Teléfono -->
+          <div class="forma-campo">
+            <label for="f-telefono">Teléfono (opcional)</label>
+            <input type="tel" id="f-telefono" name="telefono" placeholder="55 1234 5678">
+          </div>
+
+          <!-- Fecha de visita -->
+          <div class="forma-campo">
+            <label for="f-fecha">Fecha de visita</label>
+            <input type="date" id="f-fecha" name="fecha" required>
+          </div>
+
+          <!-- Tipo de entrada -->
+          <div class="forma-campo">
+            <label for="f-tipo">Tipo de entrada</label>
+            <select id="f-tipo" name="tipo" required>
+              <option value="" disabled selected>Selecciona un paquete…</option>
+              <option value="individual">🎫 Entrada individual — $180</option>
+              <option value="familiar">👨‍👩‍👧‍👦 Paquete familiar — $850</option>
+              <option value="nocturno">🌙 Zoo nocturno — $320</option>
+              <option value="estudiantil">👨‍🎓 Entrada estudiantil — $100</option>
+            </select>
+          </div>
+
+          <!-- Número de personas -->
+          <div class="forma-campo">
+            <label for="f-personas">Número de personas</label>
+            <input type="number" id="f-personas" name="personas" min="1" max="20" placeholder="1" required>
+          </div>
+
+          <!-- Comentarios (ancho completo) -->
+          <div class="forma-campo forma-campo--full">
+            <label for="f-comentarios">Comentarios o requerimientos especiales</label>
+            <textarea id="f-comentarios" name="comentarios" rows="3" placeholder="Accesibilidad, alergias, grupos escolares…"></textarea>
+          </div>
+
+          <!-- Botón -->
+          <div class="forma-campo forma-campo--full forma-campo--centro">
+            <button type="submit" class="forma-boton">Solicitar entradas </button>
+          </div>
+        </div><!-- /forma-grid -->
+      </div><!-- /forma-contenedor -->
+
     </div><!-- /contenedor -->
   </section><!-- /promociones -->
   
